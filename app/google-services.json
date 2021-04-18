@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "611819017400",
+    "project_id": "leftover-p8",
+    "storage_bucket": "leftover-p8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611819017400:android:a8af29565086b082eb504d",
+        "android_client_info": {
+          "package_name": "dk.aau.leftover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611819017400-k5om7fdsv2jv047q0i6hsp973sqvaa50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyDnsmKtsbfSVXql-GvRKu5gDo3MM5QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611819017400-k5om7fdsv2jv047q0i6hsp973sqvaa50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
