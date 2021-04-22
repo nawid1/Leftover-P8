@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/headline_home"
+        android:layout_width="201dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Full recipe"
+        android:textColor="#272727"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="205dp"
+        android:layout_height="30dp"
+        android:text="Scrambled eggs"
+        android:textColor="#FC000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="min"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredients"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This recipe is for:"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="person"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level:"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="327dp"
+        android:layout_height="275dp"
+        android:text="1. Whisk eggs together with salt/pepper\n2. Add milk and whisk again\n3. Heat a pan with oil\n4. Add mixture to pan\n5. After 30 sec. turn over the eggs with a spatul\n6. Fry for 5 minutes\n7. Serve with tomatoes "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="385dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bon appetit!"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="29dp"
+        android:layout_height="46dp"
+        android:src="@drawable/_58962679_431729211268761_1998120603404647159_n"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="31dp"
+        android:layout_height="45dp"
+        android:src="@drawable/_58617940_1408664759473527_2373182328133758700_n"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="19dp"
+        android:layout_height="20dp"
+        android:src="@drawable/_9247103631554126437"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:text="10"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This recipe was made by "
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blogger 12"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="39dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_anyconv_com__talebubble"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="27dp"
+        android:layout_height="26dp"
+        android:src="@drawable/anyconv_com__pil"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:text="3/3"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
