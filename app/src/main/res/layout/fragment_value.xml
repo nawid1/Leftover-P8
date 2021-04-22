@@ -5,532 +5,288 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ValueFragment" >
+    android:background="#FFFFFF"
+    tools:context=".ValueFragment">
 
     <!-- TITLE - LOG YOUR FOOD WASTE TITLE START-->
 
     <!--  VEGETABLE BAR START -->
+
+
+    ** layout box vegetable **
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/value_hd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="28dp"
         android:text="Log your foodwaste"
         android:textColor="#1F472E"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/vegeBar"
-        android:layout_width="268dp"
-        android:layout_height="58dp"
-        android:background="@drawable/box1"
-        android:elevation="4dp"
-        android:gravity="center_horizontal"
-        android:text="Vegetables"
-        android:textAlignment="center"
-        android:textColor="#67A991"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="258dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="80dp"
+            app:cardBackgroundColor="#E3F1E4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:showIn="@layout/fragment_value">
 
-    <!-- GREEN CIRCLE START-->
+            <include layout="@layout/layout_vegetables" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="65dp"
-        android:layout_height="57dp"
-        android:src="@drawable/circleicon"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        </com.google.android.material.card.MaterialCardView>
 
-    <!-- GREEN LINE START-->
+        ** layout box dairy **
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="258dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#E3F1E4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+            tools:showIn="@layout/fragment_value">
 
-    <View
-        android:id="@+id/greenLine"
-        android:layout_width="3dp"
-        android:layout_height="22dp"
-        android:background="#78c0a3"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+            <include layout="@layout/layout_dairy" />
 
-    <!-- 'USED' TEXT START -->
+        </com.google.android.material.card.MaterialCardView>
 
-    <!-- 'WASTED' TEXT START -->
+        ** layout box meat **
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView3"
+            android:layout_width="258dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#E3F1E4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+            tools:showIn="@layout/fragment_value">
 
-    <!-- BAR VEGETABLE END -->
+            <include layout="@layout/layout_meat" />
 
-    <!-- CHIP 2 DAIRY- START -->
-    <!--  DAIRY BAR START -->
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Used"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:id="@+id/textWasted1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wasted"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        ** layout box bread **
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="258dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#E3F1E4"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView3"
+            tools:showIn="@layout/fragment_value">
 
-    <TextView
-        android:id="@+id/dairyBar"
-        android:layout_width="268dp"
-        android:layout_height="58dp"
-        android:background="@drawable/box1"
-        android:elevation="4dp"
-        android:gravity="center_horizontal"
-        android:text="Dairy"
-        android:textAlignment="center"
-        android:textColor="#D99367"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+            <include layout="@layout/layout_bread" />
 
-    <!-- ORANGE CIRCLE START-->
+        </com.google.android.material.card.MaterialCardView>
 
-    <!-- 'WASTED' TEXT START -->
-    <ImageView
-        android:id="@+id/orangeCircle"
-        android:layout_width="65dp"
-        android:layout_height="57dp"
-        android:src="@drawable/circleorange"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
-
-    <TextView
-        android:id="@+id/textWasted2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wasted"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
-
-    <!-- 'USED' TEXT START dairy -->
-    <TextView
-        android:id="@+id/textUsed2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Used"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
-
-    <!-- ORANGE LINE START-->
-    <View
-        android:id="@+id/orangeLine"
-        android:layout_width="3dp"
-        android:layout_height="22dp"
-        android:background="#D99367"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
-
-    <!-- CHIP 3 - MEAT START -->
-    <TextView
-        android:id="@+id/meatBar"
-        android:layout_width="268dp"
-        android:layout_height="58dp"
-        android:background="@drawable/box1"
-        android:elevation="4dp"
-        android:gravity="center_horizontal"
-        android:text="Meat"
-        android:textAlignment="center"
-        android:textColor="#e18f8d"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
-
-    <!-- RED CIRCLE START-->
-
-    <ImageView
-        android:id="@+id/redCircle"
-        android:layout_width="65dp"
-        android:layout_height="57dp"
-        android:src="@drawable/circlered"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
-
-    <!-- RED LINE START-->
-    <View
-        android:id="@+id/redLine"
-        android:layout_width="3dp"
-        android:layout_height="22dp"
-        android:background="#e18f8d"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
-
-    <!-- 'USED' TEXT START meat -->
-    <TextView
-        android:id="@+id/textUsed3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Used"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
-
-    <!-- 'WASTED' TEXT START meat-->
-    <TextView
-        android:id="@+id/textWasted3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wasted"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
-
-    <!-- CHIP 4 - BREAD- START-->
-    <!--  BREAD BAR START -->
-    <TextView
-        android:id="@+id/breadBar"
-        android:layout_width="268dp"
-        android:layout_height="58dp"
-        android:background="@drawable/box1"
-        android:elevation="4dp"
-        android:gravity="center_horizontal"
-        android:text="Bread"
-        android:textAlignment="center"
-        android:textColor="#e2e186"
-        android:textSize="12dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
-
-    <!-- YELLOW CIRCLE START-->
-    <ImageView
-        android:id="@+id/yellowCircle"
-        android:layout_width="65dp"
-        android:layout_height="57dp"
-        android:src="@drawable/circleyellow"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
-
-    <!-- YELLOW LINE START-->
-    <View
-        android:id="@+id/yellowLine"
-        android:layout_width="3dp"
-        android:layout_height="22dp"
-        android:background="#e2e186"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534" />
-
-    <!-- 'USED' TEXT START bread -->
-    <TextView
-        android:id="@+id/textUsed4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Used"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
-
-    <!-- 'WASTED' TEXT START bread-->
-    <TextView
-        android:id="@+id/textWasted4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wasted"
-        android:textColor="#7b7d7b"
-        android:textSize="12dp"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
-
-    <!-- !!! BOTTOM ENTER CHIP !!! -->
-
-    <!-- BACKGROUND BOX OF ENTER VALUE -->
-
-    <!-- INPUT YOUR FOOD ITEM OF ENTER VALUE -->
-
-    <TextView
-        android:id="@+id/boxEnterValue"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="333dp"
         android:layout_height="200dp"
-        android:background="@drawable/boxentervalue"
-        android:gravity="center_horizontal"
-        android:text=""
-        android:textAlignment="center"
+        android:layout_marginBottom="28dp"
+        app:cardBackgroundColor="#E3F1E4"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="false"
+        app:checkedIconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        tools:showIn="@layout/fragment_value">
 
-    <!-- EST. PRICE OF FOOD ITEM ENTER VALUE // text-->
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="290dp"
-        android:layout_height="48dp"
-        android:hint="Type in a food item you have thrown out"
-        android:textSize="15dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/boxEnterValue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/boxEnterValue"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">>
 
-    <TextView
-        android:id="@+id/textEstimatedPrice"
-        android:layout_width="249dp"
-        android:layout_height="19dp"
-        android:text="Enter estimated price of food item:"
-        app:layout_constraintBottom_toBottomOf="@+id/boxEnterValue"
-        app:layout_constraintEnd_toEndOf="@+id/boxEnterValue"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="@+id/boxEnterValue"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
-        app:layout_constraintVertical_bias="0.089" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <!-- EST. USE OF FOOD ITEM ENTER VALUE // text-->
+                <EditText
+                    android:layout_width="253dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Type food items you have thrown out..."
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textSize="12dp" />
 
-    <!-- EST. USE OF FOOD ITEM ENTER VALUE // text-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-    <!-- CHOOSE CATEGORY // text-->
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_mic"
+                        app:backgroundTint="#534E4E" />
 
-    <TextView
-        android:id="@+id/textEstimatedUse"
-        android:layout_width="250dp"
-        android:layout_height="26dp"
-        android:text="Enter estimated use of food item:"
-        app:layout_constraintBottom_toBottomOf="@+id/boxEnterValue"
-        app:layout_constraintEnd_toEndOf="@+id/boxEnterValue"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="@+id/boxEnterValue"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
-        app:layout_constraintVertical_bias="0.373" />
+                </FrameLayout>
 
-    <TextView
-        android:id="@+id/textCategory"
-        android:layout_width="220dp"
-        android:layout_height="21dp"
-        android:text="Choose a category for your item"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/boxEnterValue"
-        app:layout_constraintEnd_toEndOf="@+id/boxEnterValue"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="@+id/boxEnterValue"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
-        app:layout_constraintVertical_bias="0.592" />
+            </LinearLayout>
 
-    <!-- ENTER BUTTON -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-    <!-- CARROT -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btnenter"
-        android:text="Enter"
-        app:backgroundTint="#00FFFFFF"
-        app:backgroundTintMode="src_atop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
+                    <TextView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enter the price of the item"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
 
-    <!-- CARROT ICON -->
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="31dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/ic_carrot__1_"
-        android:translationZ="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- MILK ICON -->
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="31dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="224dp"
-        android:src="@drawable/ic_botl_milk"
-        android:translationZ="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/box1"
+                        android:ems="10"
+                        android:hint="kr."
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textSize="12dp" />
 
-    <!-- BREAD ICON -->
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="29dp"
-        android:layout_height="29dp"
-        android:src="@drawable/ic_bread"
-        android:translationZ="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
+                </LinearLayout>
 
-    <!-- MEAT ICON -->
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="36dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="296dp"
-        android:src="@drawable/ic_meat"
-        android:translationZ="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-    <!-- ESTIMATED USE IN % (TYPE)-->
-    <EditText
-        android:id="@+id/editTextNumberSigned"
-        android:layout_width="67dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:text="        %"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
+                    <TextView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enter estimated use of item"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
 
-    <!-- ESTIMATED PRICE (TYPE)-->
-    <EditText
-        android:id="@+id/editTextNumberSigned2"
-        android:layout_width="64dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:text="        Kr."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/box1"
+                        android:ems="10"
+                        android:hint="%"
+                        android:paddingLeft="45dp"
+                        android:textSize="12dp"
+                        android:text="" />
+
+                    <ImageButton
+                        android:id="@+id/infoButton"
+                        android:layout_width="37dp"
+                        android:layout_height="26dp"
+                        android:background="#00FFFFFF"
+                        android:src="@drawable/ic_information_button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pick a category for  your item"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_carrot" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_milk" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_meat" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_bread" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="enter"
+                        android:layout_marginLeft="25dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
