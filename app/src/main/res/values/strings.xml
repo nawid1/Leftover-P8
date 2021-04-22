@@ -18,4 +18,6 @@
     <string name="title_activity_navigation">MainActivity</string>
     <string name="used">value_used</string>
     <string name="waste">value_waste</string>
+    <string name="Weekly_Value">weekly_value</string>
+    <string name="_50">50</string>
 </resources>
